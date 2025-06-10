@@ -24,7 +24,7 @@ subscribeButton.addEventListener('click', async () => {
     console.log('プッシュ通知を購読しました:', subscription);
 
     // 4. 購読情報をサーバーに送信
-     await fetch('ここに後で設定するサーバーのURL/subscribe', {
+     await fetch('https://kokusei-notify-back.onrender.com/subscribe', {
       method: 'POST',
       body: JSON.stringify(subscription),
       headers: {
